@@ -103,23 +103,23 @@ export default function App() {
 
       switch (weather[0].main) {
         case "Clear":
-          setWeatherImage("/assets/clear.png");
+          setWeatherImage("./assets/clear.png");
           break;
         case "Rain":
-          setWeatherImage("/assets/rain.png");
+          setWeatherImage("./assets/rain.png");
           break;
         case "Snow":
-          setWeatherImage("/assets/snow.png");
+          setWeatherImage("./assets/snow.png");
           break;
         case "Clouds":
-          setWeatherImage("/assets/cloud.png");
+          setWeatherImage("./assets/cloud.png");
           break;
         case "Mist":
         case "Haze":
-          setWeatherImage("/assets/mist.png");
+          setWeatherImage("./assets/mist.png");
           break;
         default:
-          setWeatherImage("/assets/cloud.png");
+          setWeatherImage("./assets/cloud.png");
       }
 
       setError(null);
