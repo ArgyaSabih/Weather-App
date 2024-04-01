@@ -53,17 +53,17 @@ function WeatherDetail({humidity, windSpeed, isSubmitted}) {
       <div className="flex w-full">
         <i className="bx bx-water text-4xl mr-2"></i>
         <div>
-          <div className={`${isSubmitted ? "animate-slideDown" : ""}`}>
-            <span className="inline-block text-md font-semibold">{humidity}%</span>
+          <div className={`${isSubmitted ? "animate-slideDown" : ""} h-5`}>
+            <span className="inline-block text-xs font-semibold">{humidity}%</span>
           </div>
-          <p className="text-xs font-semibold">Humidity</p>
+          <div className="text-xs font-semibold">Humidity</div>
         </div>
       </div>
-      <div className="flex items-center pl-5">
+      <div className="flex items-center pl-5 mt-0.5">
         <i className="bx bx-wind text-4xl mr-2"></i>
         <div className="flex flex-col items-start w-20">
           <div className={`flex justify-start ${isSubmitted ? "animate-slideDown" : ""}`}>
-            <span className="inline-block text-md font-semibold">{windSpeed} km/h</span>
+            <span className="inline-block text-xs font-semibold">{windSpeed} km/h</span>
           </div>
           <div className="text-xs font-semibold">Wind Speed</div>
         </div>
