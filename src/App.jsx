@@ -145,7 +145,7 @@ export default function App() {
         <div className="w-full text-center mt-4 flex justify-center">
           <div className="w-52">
             <img src="./assets/404.png" alt="not-found" />
-            <p className="text-base font-semibold mt-4">{error}</p>
+            <p className="text-[0.9rem] font-semibold mt-4">{error}</p>
           </div>
         </div>
       )}
